@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Layout from './Layout';
 import './App.css';
+import Card from './Components/Card';
 
 function App() {
   const navigate = useNavigate();
@@ -21,6 +22,8 @@ function App() {
       <button style={{marginTop: 20}} onClick={() => navigate('/hello')}>
         Go to Hello World
       </button>
+      <Card />
+      <Card />
     </Layout>
   );
 }
